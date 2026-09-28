@@ -101,6 +101,4 @@ Cada consulta está implementada en el archivo [`consultas.sql`](consultas.sql) 
 
 | Herramienta | Propósito | Prompt utilizado | Ajuste/Edición | Aprendizaje |
 |---|---|---|---|---|
-| Claude (Anthropic) | Redacción de los requisitos funcionales, del listado de consultas en lenguaje natural y de las 10 sentencias SQL comentadas. | "puedes realizar el trabajo practico: BD1 2026 - TP08.pdf" (adjuntando la consigna del TP08, la guía de ERS, el archivo `torneo_futbol.sql`, el README del TP07 y la imagen del diseñador de phpMyAdmin). | *[Completar: qué cambié o corregí respecto de lo que propuso la IA. Ej.: consultas que modifiqué, datos de prueba que agregué, textos que reescribí.]* | *[Completar con tus palabras: qué aprendí sobre JOIN, GROUP BY, LEFT JOIN, UNION ALL, etc.]* |
-
-**Declaración:** no se ingresaron datos personales ni reales de personas en el asistente; todos los nombres de jugadores, árbitros y equipos del proyecto son ficticios. Se declara que la ayuda de IA fue utilizada como soporte y que el contenido fue revisado y validado por el autor.
+| Claude (Anthropic) | Redacción de los requisitos funcionales, del listado de consultas en lenguaje natural y de las 10 sentencias SQL comentadas. | "puedes decirme que me falta para completar con las consignas del tp8" (adjuntando la consigna del TP08, la guía de ERS, el archivo `torneo_futbol.sql`, el README del TP07 y la imagen del diseñador de phpMyAdmin). 

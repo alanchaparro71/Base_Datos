@@ -96,9 +96,8 @@ Cada consulta está implementada en el archivo [`consultas.sql`](consultas.sql) 
 4. Abrir la pestaña *SQL*, pegar el contenido de `consultas.sql` y ejecutar cada consulta (o seleccionarlas de a una para ver cada resultado por separado).
 
 ---
-
 ## 5. Ficha de Declaración de IA
 
-| Herramienta | Propósito | Prompt utilizado 
-|---|---|---|---|---|
-| Claude (Anthropic) | Redacción de los requisitos funcionales, del listado de consultas en lenguaje natural y de las 10 sentencias SQL comentadas. | "puedes decirme que me falta para completar con las consignas del tp8" (adjuntando la consigna del TP08, la guía de ERS, el archivo `torneo_futbol.sql`, el README del TP07 y la imagen del diseñador de phpMyAdmin). 
+| Herramienta | Propósito | Prompt utilizado |
+|---|---|---|
+| Claude (Anthropic) | Redacción de los requisitos funcionales, del listado de consultas en lenguaje natural y de las 10 sentencias SQL comentadas. | "puedes revisar y decirme que me falta para completar con las consignas del tp8" (adjuntando la consigna del TP08, la guía de ERS, el archivo `torneo_futbol.sql`, el README del TP07 y la imagen del diseñador de phpMyAdmin). |

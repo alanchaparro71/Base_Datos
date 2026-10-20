@@ -1,0 +1,10 @@
+TP N.º 9 — Datos de conexión a Clever Cloud
+Completar con los datos reales y entregar únicamente por Classroom, NO subir a GitHub.
+
+Host:
+Puerto:
+Nombre de base de datos:
+Usuario:
+Contraseña:
+
+Nota: no enviar este documento en chats públicos ni incorporarlo al repositorio.

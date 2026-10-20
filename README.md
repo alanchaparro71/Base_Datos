@@ -1,60 +1,46 @@
-# TP07 - Base de Datos: Torneo de Fútbol
+# Sistema de Gestión de Pañol — TP N.º 9
 
-## 1. Descripción
-Esta base de datos permite gestionar un torneo de fútbol. Guarda información sobre equipos, jugadores, planteles, torneos, partidos, estadios, árbitros, arbitrajes y goles.
+Aplicación de consola en Python conectada a MySQL (Clever Cloud). Permite administrar herramientas y personas, cambiar estados y registrar préstamos y devoluciones.
 
-## 2. Justificación de importancia
-El sistema organiza información que normalmente estaría dispersa. Permite conocer qué equipos participan, qué jugadores pertenecen a cada plantel, cuándo y dónde se juegan los partidos, quiénes arbitran y qué goles se registraron.
+## Requisitos
+- Python 3.10 o superior.
+- Una base de datos MySQL creada en Clever Cloud.
+- Las tablas `categorias`, `herramientas`, `personas` y `prestamos` del script SQL del TP07.
 
-## 3. Objetivos
-- Registrar equipos y sus datos principales.
-- Registrar jugadores y sus posiciones.
-- Relacionar jugadores con sus equipos mediante planteles.
-- Registrar torneos y temporadas.
-- Registrar partidos, resultados y estadios.
-- Registrar árbitros y sus funciones.
-- Registrar los goles de cada partido.
-- Permitir consultas mediante SQL.
+## Instalación
+1. Descargá o cloná este repositorio.
+2. Instalá las dependencias:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Copiá `.env.example` a `.env`.
+4. Completá `.env` con el host, puerto, nombre de base, usuario y contraseña que muestra Clever Cloud.
+5. Ejecutá `SistemaGestionPanol.py`:
+   ```bash
+   python SistemaGestionPanol.py
+   ```
 
-## 4. Tablas
-La base contiene 9 tablas:
-1. equipos
-2. estadios
-3. jugadores
-4. planteles
-5. torneos
-6. partidos
-7. arbitros
-8. arbitrajes
-9. goles
+## Seguridad
+- **No subas `.env` ni credenciales reales a GitHub.**
+- `.env.example` contiene valores ficticios y sí se puede publicar.
+- Entregá los datos reales en un `.txt` privado por Classroom, según la consigna.
+- Si alguna contraseña se publicó accidentalmente, cambiala en el proveedor.
 
-## 5. Relaciones principales
-- equipos -> planteles: un equipo puede tener muchos jugadores.
-- jugadores -> planteles: un jugador puede estar registrado en distintos planteles a lo largo del tiempo.
-- torneos -> partidos: un torneo tiene muchos partidos.
-- estadios -> partidos: un estadio puede recibir muchos partidos.
-- equipos -> partidos: un equipo puede aparecer como local o visitante.
-- partidos -> arbitrajes -> arbitros: un partido puede tener varios árbitros.
-- partidos -> goles -> jugadores: un partido puede tener varios goles y cada gol se asocia a un jugador.
+## Operaciones
+- **Crear:** agregar herramientas y personas; registrar préstamos.
+- **Leer:** listar herramientas, personas y préstamos activos.
+- **Actualizar:** cambiar estado de herramientas y registrar devoluciones.
+- **Eliminar:** eliminar herramientas que no tengan registros relacionados que lo impidan.
 
-## 6. Implementación en XAMPP/phpMyAdmin
-imagen en el repositorio
-![imagen PhpMyAdmin](imagen_PhpMyAdmin.png)
+## Archivos
+- `SistemaGestionPanol.py`: aplicación.
+- `script_BD.sql`: estructura y datos de ejemplo (si se incluye).
+- `.env.example`: plantilla sin secretos.
+- `.gitignore`: excluye `.env` y archivos temporales.
+- `requirements.txt`: dependencia de MySQL.
 
-## 7. Git y GitHub
-Crear un repositorio público y subir:
-- `torneo_futbol.sql`
-- `README.md`
-
-Comandos:
-```bash
-git init
-git add .
-git commit -m "TP07 - Proyecto de Base de Datos"
-git branch -M main
-git remote add origin URL_DEL_REPOSITORIO
-git push -u origin main
-```
-
-## 8. Declaración de uso de IA
-Se utilizó ChatGPT como herramienta de apoyo para la ayuda en la solucion de problemas
+## Antes de entregar
+1. Confirmá que la base de datos esté activa y que las tablas existan.
+2. Probá cada opción con datos de prueba.
+3. Revisá que `.env` no aparezca en los archivos a subir.
+4. Adjuntá en Classroom un documento de texto con las credenciales reales y la ficha de declaración de IA solicitada por la materia.
